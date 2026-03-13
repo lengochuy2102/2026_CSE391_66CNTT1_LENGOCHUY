@@ -1,0 +1,140 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  font-family: "Oleo Script", cursive;
+  font-size: 28px;
+  color: #fcd34d;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #fcd34d;
+  font-weight: 600;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  height: 100vh;
+  background: url("images/ocean.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px 100px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.btn {
+  background: #fcd34d;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ================= HIGHLIGHTS ================= */
+
+.highlights {
+  background: linear-gradient(to bottom, #dff6f9, #c0e7eb);
+  padding: 70px 60px;
+  text-align: center;
+}
+
+.highlights h2 {
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+/* ================= CARDS ================= */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card span {
+  color: #2c7a7b;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: linear-gradient(to right, #111, #222);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+footer img {
+  width: 35px;
+  filter: brightness(0) invert(1);
+}
